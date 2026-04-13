@@ -1,0 +1,98 @@
+[
+  {
+    "id": 1,
+    "name": "Arif Hossain",
+    "picture": "https://randomuser.me/api/portraits/men/32.jpg",
+    "email": "arif.hossain@gmail.com",
+    "days_since_contact": 18,
+    "status": "overdue",
+    "tags": ["school friend", "close friend"],
+    "bio": "Met in high school. We still play football together on weekends.",
+    "goal": 14,
+    "next_due_date": "2026-04-09"
+  },
+  {
+    "id": 2,
+    "name": "Nusrat Jahan",
+    "picture": "https://randomuser.me/api/portraits/women/44.jpg",
+    "email": "nusrat.jahan@gmail.com",
+    "days_since_contact": 12,
+    "status": "almost due",
+    "tags": ["college", "study partner"],
+    "bio": "Classmate from college. We often work on assignments and coding projects together.",
+    "goal": 14,
+    "next_due_date": "2026-04-15"
+  },
+  {
+    "id": 3,
+    "name": "Siam Ahmed",
+    "picture": "https://randomuser.me/api/portraits/men/51.jpg",
+    "email": "siam.ahmed@gmail.com",
+    "days_since_contact": 5,
+    "status": "on-track",
+    "tags": ["gaming buddy", "online friend"],
+    "bio": "Known through online gaming. We usually play Valorant at night.",
+    "goal": 14,
+    "next_due_date": "2026-04-24"
+  },
+  {
+    "id": 4,
+    "name": "Tasnia Rahman",
+    "picture": "https://randomuser.me/api/portraits/women/65.jpg",
+    "email": "tasnia.rahman@gmail.com",
+    "days_since_contact": 20,
+    "status": "overdue",
+    "tags": ["cousin", "family"],
+    "bio": "My cousin from Dhaka. We meet during family events and Eid holidays.",
+    "goal": 14,
+    "next_due_date": "2026-04-07"
+  },
+  {
+    "id": 5,
+    "name": "Mahin Islam",
+    "picture": "https://randomuser.me/api/portraits/men/12.jpg",
+    "email": "mahin.islam@gmail.com",
+    "days_since_contact": 13,
+    "status": "almost due",
+    "tags": ["university", "roommate"],
+    "bio": "Former roommate at university hostel. Loves cricket and late-night tea chats.",
+    "goal": 14,
+    "next_due_date": "2026-04-14"
+  },
+  {
+    "id": 6,
+    "name": "Farzana Akter",
+    "picture": "https://randomuser.me/api/portraits/women/29.jpg",
+    "email": "farzana.akter@gmail.com",
+    "days_since_contact": 3,
+    "status": "on-track",
+    "tags": ["office friend", "mentor"],
+    "bio": "Met during an internship. She often helps me with career advice.",
+    "goal": 14,
+    "next_due_date": "2026-04-26"
+  },
+  {
+    "id": 7,
+    "name": "Rakib Hasan",
+    "picture": "https://randomuser.me/api/portraits/men/77.jpg",
+    "email": "rakib.hasan@gmail.com",
+    "days_since_contact": 15,
+    "status": "overdue",
+    "tags": ["neighbor", "childhood friend"],
+    "bio": "Grew up in the same neighborhood. We have been friends since childhood.",
+    "goal": 14,
+    "next_due_date": "2026-04-12"
+  },
+  {
+    "id": 8,
+    "name": "Jannatul Ferdous",
+    "picture": "https://randomuser.me/api/portraits/women/18.jpg",
+    "email": "jannatul.ferdous@gmail.com",
+    "days_since_contact": 7,
+    "status": "on-track",
+    "tags": ["coding friend", "project teammate"],
+    "bio": "Met in a web development bootcamp. We collaborate on React projects.",
+    "goal": 14,
+    "next_due_date": "2026-04-20"
+  }
+]
