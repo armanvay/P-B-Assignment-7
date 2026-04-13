@@ -10,7 +10,7 @@ import { ImStatsDots } from 'react-icons/im';
 const Navbar = () => {
     return (
       <div className="bg-white  shadow py-2 ">
-        <nav className=" flex flex-wrap justify-between items-center container mx-auto   py-2 ">
+        <nav className=" flex flex-wrap justify-between items-center max-w-11/12 mx-auto   py-2 ">
           <img src={img} alt="" className="" />
           <ul className="flex flex-wrap gap-5">
             <li className="">

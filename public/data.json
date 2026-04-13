@@ -20,7 +20,7 @@
     "status": "almost due",
     "tags": ["college", "study partner"],
     "bio": "Classmate from college. We often work on assignments and coding projects together.",
-    "goal": 14,
+    "goal": 41,
     "next_due_date": "2026-04-15"
   },
   {
@@ -32,7 +32,7 @@
     "status": "on-track",
     "tags": ["gaming buddy", "online friend"],
     "bio": "Known through online gaming. We usually play Valorant at night.",
-    "goal": 14,
+    "goal": 49,
     "next_due_date": "2026-04-24"
   },
   {
@@ -44,7 +44,7 @@
     "status": "overdue",
     "tags": ["cousin", "family"],
     "bio": "My cousin from Dhaka. We meet during family events and Eid holidays.",
-    "goal": 14,
+    "goal": 39,
     "next_due_date": "2026-04-07"
   },
   {
@@ -56,7 +56,7 @@
     "status": "almost due",
     "tags": ["university", "roommate"],
     "bio": "Former roommate at university hostel. Loves cricket and late-night tea chats.",
-    "goal": 14,
+    "goal": 34,
     "next_due_date": "2026-04-14"
   },
   {
@@ -68,7 +68,7 @@
     "status": "on-track",
     "tags": ["office friend", "mentor"],
     "bio": "Met during an internship. She often helps me with career advice.",
-    "goal": 14,
+    "goal": 28,
     "next_due_date": "2026-04-26"
   },
   {
@@ -80,7 +80,7 @@
     "status": "overdue",
     "tags": ["neighbor", "childhood friend"],
     "bio": "Grew up in the same neighborhood. We have been friends since childhood.",
-    "goal": 14,
+    "goal": 12,
     "next_due_date": "2026-04-12"
   },
   {
@@ -92,7 +92,7 @@
     "status": "on-track",
     "tags": ["coding friend", "project teammate"],
     "bio": "Met in a web development bootcamp. We collaborate on React projects.",
-    "goal": 14,
+    "goal": 34,
     "next_due_date": "2026-04-20"
   }
 ]
