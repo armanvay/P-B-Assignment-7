@@ -22,7 +22,8 @@ const CardDetis = ({params}) => {
 
     const actipeCard =cardid.find(card =>card.id ==id)
     // console.log(actipeCard)
-  const {timeline, setTimeline} = useContext(TimelineContext);
+  const { timeline, setTimeline } = useContext(TimelineContext);
+  // console.log(timeline)
     const {
       name,
       picture,
@@ -36,10 +37,19 @@ const CardDetis = ({params}) => {
     } = actipeCard;
     
 
-    const addTimeline=(actipeCard)=>{
-        setTimeline([...timeline,actipeCard])
+    // const addTimeline=(actipeCard)=>{
+    //     setTimeline([...timeline,actipeCard])
 
-    }
+    // }
+
+    const addTimeline = (actipeCard, actionType) => {
+      const newTimelineItem = {
+        ...actipeCard,
+        actionType,
+      };
+
+      setTimeline([...timeline, newTimelineItem]);
+    };
   
    
     return (
@@ -142,17 +152,17 @@ const CardDetis = ({params}) => {
             <h3 className="font-semibold mb-3">Quick Check-In</h3>
 
             <div className="grid grid-cols-3 gap-3">
-              <button  onClick={()=>addTimeline(actipeCard)} className="flex flex-col items-center p-3 border rounded hover:bg-gray-100">
+              <button  onClick={()=>addTimeline(actipeCard,"call")} className="flex flex-col items-center p-3 border rounded hover:bg-gray-100">
                 <FiPhone size={20} />
                 <span className="text-xs mt-1">Call</span>
               </button>
 
-              <button onClick={()=>addTimeline(actipeCard)} className="flex flex-col items-center p-3 border rounded hover:bg-gray-100">
+              <button onClick={()=>addTimeline(actipeCard,"text")} className="flex flex-col items-center p-3 border rounded hover:bg-gray-100">
                 <FiMessageSquare size={20} />
                 <span className="text-xs mt-1">Text</span>
               </button>
 
-              <button onClick={()=>addTimeline(actipeCard)} className="flex flex-col items-center p-3 border rounded hover:bg-gray-100">
+              <button onClick={()=>addTimeline(actipeCard,"video")} className="flex flex-col items-center p-3 border rounded hover:bg-gray-100">
                 <FiVideo size={20} />
                 <span className="text-xs mt-1">Video</span>
               </button>

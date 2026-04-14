@@ -50,7 +50,7 @@ const CardLode = () => {
         </div>
         <div>
           <p className='font-bold text-2xl mb-5 '> Your Friends</p>
-          <div className='grid md:grid-cols-4 gap-4 mb-10'>
+          <div className='grid md:grid-cols-4 gap-4 mb-20'>
             {card.map((card,i) =><AllCard key={i} card={card}></AllCard>)}
           </div>
         </div>
