@@ -1,14 +1,37 @@
-import React, { use } from 'react';
+import React, { useEffect, useState } from 'react';
 import { FaCheckCircle, FaComments, FaExclamationCircle, FaUserFriends } from 'react-icons/fa';
 import AllCard from '../ShowCard/AllCard';
+import { HashLoader } from 'react-spinners';
 
 
 
-const cardFormis = fetch("/data.json").then((res) => res.json());
+// const cardFormis = fetch("/data.json").then((res) => res.json());
 
 
 const CardLode = () => {
-        const card =use(cardFormis)
+        // const card =use(cardFormis)
+
+         const [card, setCard] = useState([]);
+  const [loading, setLoading] = useState(true);
+
+  useEffect(() => {
+    fetch("/data.json")
+      .then((res) => res.json())
+      .then((data) => {
+        setTimeout(() => {
+          setCard(data);
+          setLoading(false);
+        }, 2500);
+      });
+  }, []);
+
+  if (loading) {
+    return (
+      <div className="h-screen flex flex-col justify-center items-center">
+        <HashLoader color="#008000" size={70} />
+      </div>
+    );
+  }
         
     
 
