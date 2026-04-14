@@ -48,6 +48,7 @@ const CardDetis = ({params}) => {
       const newTimelineItem = {
         ...actipeCard,
         actionType,
+        date: new Date().toLocaleDateString(),
       };
 
       setTimeline([...timeline, newTimelineItem]);

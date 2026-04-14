@@ -16,7 +16,7 @@ const Timeline = () => {
   const {filter, setFilter} =useContext(TimelineContext)
 
   const filteredTimeline = filter === "all" ? timeline: timeline.filter((item) => item.actionType === filter);
-const times = new Date().toLocaleDateString();
+
   return (
     <div className="max-w-6xl mx-auto mt-10 mb-10 px-4">
       <h1 className="text-4xl font-bold mb-6 text-slate-800">Timeline</h1>
@@ -30,7 +30,7 @@ const times = new Date().toLocaleDateString();
         </select>
       </label>
 
-      {timeline.length === 0 ? (
+      {filteredTimeline.length === 0 ? (
         <div className="flex flex-col items-center justify-center text-center bg-white shadow rounded-xl p-10">
           <FiClock size={60} className="text-gray-400 mb-4" />
 
@@ -82,19 +82,19 @@ const times = new Date().toLocaleDateString();
               <div className="flex items-center gap-2">
                 {item.actionType === "call" && (
                   <span className="flex items-center gap-2 bg-green-100 text-green-700 px-3 py-1 rounded-full text-sm font-semibold">
-                    <FiPhone /> {times}
+                    <FiPhone /> {item.date}
                   </span>
                 )}
 
                 {item.actionType === "text" && (
                   <span className="flex items-center gap-2 bg-blue-100 text-blue-700 px-3 py-1 rounded-full text-sm font-semibold">
-                    <FiMessageSquare /> {times}
+                    <FiMessageSquare /> {item.date}
                   </span>
                 )}
 
                 {item.actionType === "video" && (
                   <span className="flex items-center gap-2 bg-purple-100 text-purple-700 px-3 py-1 rounded-full text-sm font-semibold">
-                    <FiVideo /> {times}
+                    <FiVideo /> {item.date}
                   </span>
                 )}
               </div>
