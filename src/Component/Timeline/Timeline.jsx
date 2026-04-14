@@ -15,9 +15,16 @@ const Timeline = () => {
     
     return (
       <div className="max-w-6xl mx-auto mt-10 mb-10 px-4">
-        <h1 className="text-3xl font-bold mb-6 text-slate-800">
-          Activity Timeline
-        </h1>
+        <h1 className="text-4xl font-bold mb-6 text-slate-800">Timeline</h1>
+        <label className="select mb-10">
+          <span className="label">Filter timeline</span>
+          <select>
+            <option>ALL</option>
+            <option>Call</option>
+            <option>Video</option>
+            <option>Text</option>
+          </select>
+        </label>
 
         {timeline.length === 0 ? (
           <div className="flex flex-col items-center justify-center text-center bg-white shadow rounded-xl p-10">
@@ -60,7 +67,7 @@ const Timeline = () => {
 
                   <div>
                     <h2 className="font-bold text-lg text-slate-800">
-                      {item.name}
+                      {item.actionType} With <span className='text-[15px] text-gray-500'> {item.name}</span>
                     </h2>
                     <p className="text-sm text-gray-500">{item.email}</p>
                   </div>

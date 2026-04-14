@@ -11,6 +11,7 @@ import Timeline from './Component/Timeline/Timeline';
 import Stats from './Component/Stats/Stats';
 import CardDetis from './Component/CardDetis/CardDetis';
 import TimelineProvider from './Component/Context/TimelineProvider';
+import { ToastContainer } from 'react-toastify';
 
 
 const router = createBrowserRouter([
@@ -31,6 +32,7 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <TimelineProvider>
       <RouterProvider router={router} />
+      <ToastContainer />
     </TimelineProvider>
   </StrictMode>,
 );
