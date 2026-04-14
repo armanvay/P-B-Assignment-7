@@ -156,7 +156,7 @@ const CardDetis = ({params}) => {
             <div className="grid grid-cols-3 gap-3">
               <button
                 onClick={() => addTimeline(actipeCard, "call")}
-                className="flex flex-col items-center p-3 border rounded hover:bg-gray-100"
+                className="cursor-pointer flex flex-col items-center p-3 border rounded hover:bg-gray-100"
               >
                 <FiPhone size={20} />
                 <span className="text-xs mt-1">Call</span>
@@ -164,7 +164,7 @@ const CardDetis = ({params}) => {
 
               <button
                 onClick={() => addTimeline(actipeCard, "text")}
-                className="flex flex-col items-center p-3 border rounded hover:bg-gray-100"
+                className="cursor-pointer flex flex-col items-center p-3 border rounded hover:bg-gray-100"
               >
                 <FiMessageSquare size={20} />
                 <span className="text-xs mt-1">Text</span>
@@ -172,7 +172,7 @@ const CardDetis = ({params}) => {
 
               <button
                 onClick={() => addTimeline(actipeCard, "video")}
-                className="flex flex-col items-center p-3 border rounded hover:bg-gray-100"
+                className="cursor-pointer flex flex-col items-center p-3 border rounded hover:bg-gray-100"
               >
                 <FiVideo size={20} />
                 <span className="text-xs mt-1">Video</span>
