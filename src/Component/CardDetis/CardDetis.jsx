@@ -42,6 +42,7 @@ const CardDetis = ({params}) => {
     //     setTimeline([...timeline,actipeCard])
 
     // }
+  
 
     const addTimeline = (actipeCard, actionType) => {
       const newTimelineItem = {
@@ -51,6 +52,7 @@ const CardDetis = ({params}) => {
 
       setTimeline([...timeline, newTimelineItem]);
       toast.success(`${actipeCard.name} SuccessFull ${actionType}`)
+      
     };
   
    
@@ -92,13 +94,12 @@ const CardDetis = ({params}) => {
                 <p className="font-semibold  text-gray-400">
                   Preferred:{email}
                 </p>
-                <p className="font-bold ">
+                <div className="font-bold ">
                   <p className="text-center"> Bio</p>
-                  <hr className="text-gray-400" />
                   <p className='shadow mt-4 p-3 rounded'>
                     <span className="text-gray-500 "> {bio}</span>
                   </p>
-                </p>
+                </div>
               </div>
             </div>
           </div>

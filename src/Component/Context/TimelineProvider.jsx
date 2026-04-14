@@ -5,9 +5,11 @@ import { TimelineContext } from './TimelineContext';
 
 
 const TimelineProvider = ({ children }) => {
+    const [filter, setFilter] = useState("all");
+  
   const  [timeline, setTimeline]  =useState([])
 
-  
+
   
 
 
@@ -15,6 +17,8 @@ const TimelineProvider = ({ children }) => {
   const data = {
     timeline,
     setTimeline,
+    filter,
+    setFilter,
   };
   return (
     <TimelineContext.Provider value={data}>

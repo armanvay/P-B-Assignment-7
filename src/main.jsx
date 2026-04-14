@@ -12,6 +12,7 @@ import Stats from './Component/Stats/Stats';
 import CardDetis from './Component/CardDetis/CardDetis';
 import TimelineProvider from './Component/Context/TimelineProvider';
 import { ToastContainer } from 'react-toastify';
+import NotFund from './Component/NotFund/NotFund';
 
 
 const router = createBrowserRouter([
@@ -25,6 +26,10 @@ const router = createBrowserRouter([
       {path :"/detis/:id", Component:CardDetis}
     ],
   },
+  {
+    path:"*",
+    Component:NotFund
+  }
 ]);
 
 
